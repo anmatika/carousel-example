@@ -5,21 +5,6 @@ import './App.css';
 
 class App extends Component {
 
- getInitialState() {
-    return {
-      index: 0,
-      direction: null
-    };
-  }
-
-  handleSelect(selectedIndex, e) {
-    alert('selected=' + selectedIndex + ', direction=' + e.direction);
-    this.setState({
-      index: selectedIndex,
-      direction: e.direction
-    });
-  }
-  
   render() {
     return (
       <div className="App">
@@ -29,24 +14,27 @@ class App extends Component {
         </div>
         <Carousel>
             <Carousel.Item>
-              Zoo
+              <div className="carousel-item">
+                <h2>Zoo</h2> 
+              </div>
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div className="caption-item">Zoo caption</div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              Foo
+              <div className="carousel-item">
+                <h2>Foo</h2> 
+              </div>
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               <div className="caption-item">Foo caption</div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              Bar
+              <div className="carousel-item">
+                <h2>Bar</h2>
+              </div>
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cur sus magna, vel scelerisque nisl consectetur.</p>
+               <div className="caption-item">Bar caption</div>
               </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -6,7 +6,8 @@ module.exports = {
         "mocha": true,
         "jest": true
     },
-    "extends": "airbnb/base",
+    "extends": "eslint:recommended",
+
     "rules": {
         "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
         "linebreak-style": ["off"],

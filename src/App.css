@@ -1,7 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+.carousel-item {
+  height: 500px;
+}
+
 .App {
   text-align: center;
-  background: lightblue;
 }
 
 .App-logo {
